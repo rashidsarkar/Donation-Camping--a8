@@ -7,7 +7,7 @@
       "category": "Health",
       "category_bg": "#ff6b6b",
       "card_bg": "#fce4ec",
-      "text_button_bg": "#ff6b6b",
+      "text_button_bg": "#800000",
       "description": "Donate essential medical supplies to help those in need. Your contribution will provide crucial medical equipment, including masks, gloves, and sanitizers, to frontline healthcare workers and vulnerable communities. Together, we can make a difference in the fight against COVID-19 and other health crises.",
       "price": 300
     },
@@ -18,7 +18,7 @@
       "category": "Education",
       "category_bg": "#6fa3ef",
       "card_bg": "#e3f2fd",
-      "text_button_bg": "#6fa3ef",
+      "text_button_bg": "#333333",
       "description": "Contribute to a scholarship fund and support students in pursuing their education. Your generous donation will enable bright and deserving students to access quality education, empowering them to build a better future. Education is the key to unlocking opportunities, and with your help, we can open doors for the next generation.",
       "price": 450
     },
@@ -29,7 +29,7 @@
       "category": "Clothing",
       "category_bg": "#ffd700",
       "card_bg": "#fff8e1",
-      "text_button_bg": "#ffd700",
+      "text_button_bg": "#8a2be2   ",
       "description": "Provide warm clothing items to help people stay cozy during the winter season. Your contribution will ensure that individuals facing cold weather have access to warm jackets, sweaters, and blankets. By donating, you can bring comfort and relief to those in need and make the winter months a little warmer for everyone.",
       "price": 280
     },
