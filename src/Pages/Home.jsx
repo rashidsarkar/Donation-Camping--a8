@@ -1,5 +1,15 @@
+import { useContext } from "react";
+import Banner from "../Components/Banner/Banner";
+import { GlobalContext } from "../Layout/MainLayaout";
+
 function Home() {
-  return <div>Home</div>;
+  const contestApiValue = useContext(GlobalContext);
+  console.log(contestApiValue);
+  return (
+    <>
+      <Banner></Banner>
+    </>
+  );
 }
 
 export default Home;

@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div>
-      <div className="navbar bg-base-100">
+    <>
+      <div className="bg-transparent navbar">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -98,7 +98,7 @@ function Navbar() {
           </ul>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
