@@ -2,7 +2,7 @@
   "donations": [
     {
       "id": 1,
-      "picture": "./images/Medical_Supplies.jpg",
+      "picture": "https://i.ibb.co/641vt4j/tmp-7340-BA8008gm-Ep-A0.jpg",
       "title": "Medical Supplies",
       "category": "Health",
       "category_bg": "#ff6b6b",
@@ -57,7 +57,7 @@
     },
     {
       "id": 6,
-      "picture": "./images/Educational_Materials.jpg",
+      "picture": "https://i.ibb.co/VQHbk1X/resize-1695585561590913576-Educational-Materials.jpg",
       "title": "Educational Materials",
       "category": "Education",
       "category_bg": "#6fa3ef",
@@ -90,7 +90,7 @@
     },
     {
       "id": 9,
-      "picture": "./images/Medical_Research.jpg",
+      "picture": "https://i.ibb.co/kM1dZKm/resize-1695585253221997895-Medical-Research.jpg",
       "title": "Medical Research",
       "category": "Health",
       "category_bg": "#ff6b6b",
@@ -112,7 +112,7 @@
     },
     {
       "id": 11,
-      "picture": "./images/Warm_Blankets.jpg",
+      "picture": "https://i.ibb.co/HKXDfQx/resize-16955858561409127110-Warm-Blankets.jpg",
       "title": "Warm Blankets",
       "category": "Clothing",
       "category_bg": "#ffd700",
