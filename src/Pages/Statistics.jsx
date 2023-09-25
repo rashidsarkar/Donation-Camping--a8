@@ -53,7 +53,6 @@ function Statistics() {
     }
   }, [contestApiValue, donations]);
 
-  // Calculate the percentages dynamically
   console.log(totalDonation, myDonation);
   const totalPercentage = (totalDonation / (totalDonation + myDonation)) * 100;
   const myPercentage = (myDonation / (totalDonation + myDonation)) * 100;
@@ -90,11 +89,11 @@ function Statistics() {
       <div className="flex items-center justify-center gap-16">
         <div className="flex items-center gap-4 ">
           <p>Your Donation</p>
-          <div className="w-[100px] h-[12px] rounded-xl bg-[#00C49F] "></div>
+          <div className="w-[100px] h-[12px] rounded-xl bg-[#00C49F]"></div>
         </div>
         <div className="flex items-center gap-4 ">
           <p>Total Donation</p>
-          <div className="w-[100px] h-[12px] rounded-xl bg-[#FF444A] "></div>
+          <div className="w-[100px] h-[12px] rounded-xl bg-[#FF444A]"></div>
         </div>
       </div>
     </div>
