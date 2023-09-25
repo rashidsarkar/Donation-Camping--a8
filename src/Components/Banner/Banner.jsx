@@ -11,7 +11,7 @@ function Banner({ setCategoryName }) {
   return (
     <>
       <div
-        className="min-h-[40vh] hero "
+        className="min-h-[74vh] hero"
         style={{
           backgroundImage: "url('./Resources/overlay_img.jpg')",
         }}
