@@ -1,4 +1,13 @@
-function Banner() {
+import React, { useState } from "react";
+
+function Banner({ setCategoryName }) {
+  const [searchInput, setSearchInput] = useState("");
+
+  const handleSearch = () => {
+    // Call the setCategoryName function with the search input value
+    setCategoryName(searchInput);
+  };
+
   return (
     <>
       <div
@@ -22,6 +31,8 @@ function Banner() {
                     placeholder="Search here...."
                     aria-label="Search"
                     aria-describedby="button-addon1"
+                    value={searchInput}
+                    onChange={(e) => setSearchInput(e.target.value)}
                   />
 
                   {/* Search button */}
@@ -31,6 +42,7 @@ function Banner() {
                     id="button-addon1"
                     data-te-ripple-init
                     data-te-ripple-color="light"
+                    onClick={handleSearch}
                   >
                     Search
                   </button>

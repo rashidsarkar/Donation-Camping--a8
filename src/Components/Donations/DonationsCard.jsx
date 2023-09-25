@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 function DonationsCard({ donationsData }) {
   const { picture, card_bg, category, category_bg, id, title, text_button_bg } =
     donationsData;
-  console.log(card_bg);
+  // console.log(card_bg);
   const cardStyle = {
     backgroundColor: card_bg,
   };
