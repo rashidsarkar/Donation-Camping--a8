@@ -63,14 +63,14 @@ function Statistics() {
       <div className="flex justify-center">
         <div className="container px-4 mx-auto sm:px-6 md:px-8">
           <div className="max-w-screen-md mx-auto">
-            <PieChart width={400} height={400} className="mx-auto">
+            <PieChart width={300} height={300} className="mx-auto">
               <Pie
                 data={data}
-                cx={200}
-                cy={200}
+                cx={150}
+                cy={150}
                 labelLine={false}
                 label={renderCustomizedLabel}
-                outerRadius={150}
+                outerRadius={100}
                 innerRadius={0}
                 fill="#8884d8"
                 dataKey="value"
@@ -86,7 +86,7 @@ function Statistics() {
           </div>
         </div>
       </div>
-      <div className="grid items-center justify-center grid-cols-2 gap-3 p-3 lg:flex lg:gap-16">
+      <div className="grid items-center justify-center grid-cols-2 gap-3 p-3 md:flex lg:flex lg:gap-16">
         <div className="flex items-center gap-4">
           <p>Your Donation</p>
           <div className="w-[100px] h-[12px] rounded-xl bg-[#00C49F]"></div>
