@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { GlobalContext } from "../Layout/MainLayaout";
 import useFindDataById from "../Hooks/UseFinddata";
+import swal from "sweetalert";
 
 function DonationDetails() {
   const contestApiValue = useContext(GlobalContext);
@@ -10,22 +11,36 @@ function DonationDetails() {
 
   console.log(foundDonationData);
   if (!foundDonationData) {
-    return "";
+    return null;
   }
-  const {
-    picture,
+  const { picture, description, title, text_button_bg, price } =
+    foundDonationData;
 
-    description,
-
-    title,
-    text_button_bg,
-    price,
-  } = foundDonationData;
-  console.log(picture);
   const btnStyle = {
     backgroundColor: text_button_bg,
-    // color: text_button_bg,
   };
+  const handleDonate = () => {
+    const donatedItems = [];
+    const storedDonations = JSON.parse(localStorage.getItem("donations"));
+
+    // pay nai kiso tokon
+    if (!storedDonations) {
+      donatedItems.push(foundDonationData);
+      localStorage.setItem("donations", JSON.stringify(donatedItems));
+
+      swal("Success", "Donation Added!", "success");
+    } else {
+      const isExits = storedDonations.find((item) => item.id == id);
+      if (!isExits) {
+        donatedItems.push(...storedDonations, foundDonationData);
+        localStorage.setItem("donations", JSON.stringify(donatedItems));
+        swal("Success", "Donation Added!", "success");
+      } else {
+        swal("Warning", "Donation is already added!", "warning");
+      }
+    }
+  };
+
   return (
     <>
       <div className="test2">
@@ -33,14 +48,14 @@ function DonationDetails() {
           className="h-[500px] flex justify-center relative  p-12 object-cover overflow-hidden text-center bg-center  bg-no-repeat bg-cover rounded-lg "
           style={{ backgroundImage: `url('${picture}')` }}
         >
-          {/* <img className="h-full" src={picture} alt="" /> */}
           <div
             className="absolute flex items-center bottom-0 left-0 right-0 w-full h-[20%] overflow-hidden bg-fixed"
             style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
           >
             <button
+              onClick={handleDonate}
               style={btnStyle}
-              className={`btn overflow-hidden outline-none text-white  border-0 lg:ml-8 ]`}
+              className={`btn overflow-hidden outline-none text-white border-0 lg:ml-8`}
             >
               Donate ${price}
             </button>
