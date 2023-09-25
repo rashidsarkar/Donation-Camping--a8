@@ -13,7 +13,7 @@
     },
     {
       "id": 2,
-      "picture": "./images/Scholarship_Fund.jpg",
+      "picture": "https://i.ibb.co/w0BtNq0/tmp-15356-j-QKZ6f-C3-WQ6-P.jpg",
       "title": "Scholarship Fund",
       "category": "Education",
       "category_bg": "#FFC4C5",
@@ -24,7 +24,7 @@
     },
     {
       "id": 3,
-      "picture": "./images/Warm_Clothing.jpg",
+      "picture": "https://i.ibb.co/WHRV290/tmp-15356-ko-Xgi-Urxyj-FL.jpg",
       "title": "Warm Clothing",
       "category": "Clothing",
       "category_bg": "#D4ECC2",
@@ -35,7 +35,7 @@
     },
     {
       "id": 4,
-      "picture": "./images/Emergency_Food_Aid.jpg",
+      "picture": "https://i.ibb.co/949zMdw/tmp-15356-HKWIkd-Ox-FM6c.webp",
       "title": "Emergency Food Aid",
       "category": "Food",
       "category_bg": "#FDD2C4",
@@ -46,7 +46,7 @@
     },
     {
       "id": 5,
-      "picture": "./images/Healthcare_Services.jpg",
+      "picture": "https://i.ibb.co/Dz1fkM5/tmp-15356-r-Fj-WVGTY6j-Z2.jpg",
       "title": "Healthcare Services",
       "category": "Health",
       "category_bg": "#aec7ff",
@@ -79,7 +79,7 @@
     },
     {
       "id": 8,
-      "picture": "./images/Nutritious_Meals.jpg",
+      "picture": "https://i.ibb.co/ChnrWYh/tmp-15356-RMnp315dl-ULN.jpg",
       "title": "Nutritious Meals",
       "category": "Food",
       "category_bg": "#FDD2C4",
@@ -101,7 +101,7 @@
     },
     {
       "id": 10,
-      "picture": "./images/Educational_Workshops.png",
+      "picture": "https://i.ibb.co/NVRMh80/tmp-15356-x-Gxg9a0-ZLam3.png",
       "title": "Educational Workshops",
       "category": "Education",
       "category_bg": "#FFC4C5",
@@ -123,7 +123,7 @@
     },
     {
       "id": 12,
-      "picture": "./images/Food_Banks.jpg",
+      "picture": "https://i.ibb.co/47f59JY/tmp-15356-5-Fh-Tc-NFdv-Sw-C.jpg",
       "title": "Food Banks",
       "category": "Food",
       "category_bg": "#FDD2C4",
