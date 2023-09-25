@@ -20,7 +20,7 @@ function Donation() {
 
   return (
     <div>
-      <div className="grid gap-4 lg:grid-cols-2">
+      <div className="grid gap-4 mt-3 lg:grid-cols-2">
         {isShow
           ? donations.map((item) => (
               <MyDonationCard

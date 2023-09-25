@@ -4,8 +4,8 @@ function Banner({ setCategoryName }) {
   const [searchInput, setSearchInput] = useState("");
 
   const handleSearch = () => {
-    // Call the setCategoryName function with the search input value
     setCategoryName(searchInput);
+    setSearchInput("");
   };
 
   return (

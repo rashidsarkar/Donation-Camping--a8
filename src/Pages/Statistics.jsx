@@ -53,41 +53,41 @@ function Statistics() {
     }
   }, [contestApiValue, donations]);
 
-  console.log(totalDonation, myDonation);
-  const totalPercentage = (totalDonation / (totalDonation + myDonation)) * 100;
-  const myPercentage = (myDonation / (totalDonation + myDonation)) * 100;
-
   const data = [
-    { name: "totalDonation", value: totalPercentage },
-    { name: "myDonation", value: myPercentage },
+    { name: "totalDonation", value: totalDonation - myDonation },
+    { name: "myDonation", value: myDonation },
   ];
-  console.log(totalPercentage, myPercentage);
+
   return (
-    <div>
+    <>
       <div className="flex justify-center">
-        <PieChart width={500} height={500}>
-          <Pie
-            data={data}
-            cx={250}
-            cy={250}
-            labelLine={false}
-            label={renderCustomizedLabel}
-            outerRadius={150}
-            innerRadius={0}
-            fill="#8884d8"
-            dataKey="value"
-          >
-            {data.map((entry, index) => (
-              <Cell
-                key={`cell-${index}`}
-                fill={COLORS[index % COLORS.length]}
-              />
-            ))}
-          </Pie>
-        </PieChart>
+        <div className="container px-4 mx-auto sm:px-6 md:px-8">
+          <div className="max-w-screen-md mx-auto">
+            <PieChart width={400} height={400} className="mx-auto">
+              <Pie
+                data={data}
+                cx={200}
+                cy={200}
+                labelLine={false}
+                label={renderCustomizedLabel}
+                outerRadius={150}
+                innerRadius={0}
+                fill="#8884d8"
+                dataKey="value"
+              >
+                {data.map((entry, index) => (
+                  <Cell
+                    key={`cell-${index}`}
+                    fill={COLORS[index % COLORS.length]}
+                  />
+                ))}
+              </Pie>
+            </PieChart>
+          </div>
+        </div>
       </div>
-      <div className="flex items-center justify-center gap-16">
-        <div className="flex items-center gap-4 ">
+      <div className="grid items-center justify-center grid-cols-2 gap-3 p-3 lg:flex lg:gap-16">
+        <div className="flex items-center gap-4">
           <p>Your Donation</p>
           <div className="w-[100px] h-[12px] rounded-xl bg-[#00C49F]"></div>
         </div>
@@ -96,7 +96,7 @@ function Statistics() {
           <div className="w-[100px] h-[12px] rounded-xl bg-[#FF444A]"></div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

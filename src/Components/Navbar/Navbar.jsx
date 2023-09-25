@@ -42,7 +42,6 @@ function Navbar() {
                 >
                   Statistics
                 </NavLink>
-                ;
               </li>
             </ul>
           </div>
