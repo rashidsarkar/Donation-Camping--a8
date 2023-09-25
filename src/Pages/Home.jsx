@@ -10,15 +10,8 @@ function Home() {
   return (
     <>
       <Banner></Banner>
-      {/* <div>
-        {contestApiValue.map((contestApiValue) => (
-          <DonationsCard
-            key={contestApiValue.id}
-            donationsData={contestApiValue}
-          ></DonationsCard>
-        ))}
-      </div> */}
-      <div className="grid lg:grid-cols-3 md:grid-cols-2">
+
+      <div className="grid gap-6 lg:grid-cols-4 md:grid-cols-2">
         {contestApiValue?.map((donatData) => (
           <DonationsCard
             key={donatData.id}

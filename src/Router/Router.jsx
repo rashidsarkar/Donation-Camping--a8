@@ -3,6 +3,7 @@ import MainLayaout from "../Layout/MainLayaout";
 import Home from "../Pages/Home";
 import Donation from "../Pages/Donation";
 import Statistics from "../Pages/Statistics";
+import DonationDetails from "../Pages/DonationDetails";
 
 const myCreateRouter = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const myCreateRouter = createBrowserRouter([
       {
         path: "/statistics",
         element: <Statistics></Statistics>,
+      },
+      {
+        path: "/donation-details/:id",
+        element: <DonationDetails></DonationDetails>,
       },
     ],
   },
