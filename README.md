@@ -14,11 +14,7 @@ A platform to connect donors and charities, making it easy to contribute and tra
 
 5. **Category-Based Filtering**: Quickly find donations in specific categories like clothing, food, education, and more.
 
-6. **User Profiles**: Create and manage your user profile to keep track of your donations and contributions.
-
-7. **Responsive Design**: The application is responsive and accessible on various devices, ensuring a seamless user experience.
-
-8. **Local Storage**: Donations and user contributions are stored locally for offline access and data persistence.
+6. **Responsive Design**: The application is responsive and accessible on various devices, ensuring a seamless user experience.
 
 ## Technology Stack
 
@@ -28,7 +24,6 @@ A platform to connect donors and charities, making it easy to contribute and tra
 - **State Management**: Utilizes React Context API for managing global state.
 - **Local Storage**: Implements browser local storage for storing donations and user data.
 - **Styling**: Styled using Tailwind CSS for responsive and modern design.
-- **Version Control**: Managed with Git and hosted on GitHub.
 
 ## Usage
 
